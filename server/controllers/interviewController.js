@@ -9,7 +9,7 @@ export const createInterview = async (req, res) => {
       interviewType,
     } = req.body;
 
- const { role, experience, difficulty, interviewType } = req.body;
+
 
 if (!role || experience === undefined || !difficulty || !interviewType) {
     return res.status(400).json({
